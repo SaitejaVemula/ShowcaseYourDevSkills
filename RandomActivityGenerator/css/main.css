@@ -1,0 +1,13 @@
+* {
+  margin: o;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", "Helvetica", "Helverica Neue", "Arial", sans-serif;
+}
+/*# sourceMappingURL=main.css.map */
