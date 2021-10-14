@@ -1,4 +1,37 @@
 .card {
+  margin: 6rem auto 12rem;
   background: #de5037;
+
   padding: 20px 40px;
+
+  border-radius: 5px;
+  color: white;
+
+  box-shadow: 0 4rem 6rem rgba(#de5037, 0.1), 0 2rem 4rem rgba(#de5037, 0.3),
+    0 1rem 2rem rgba(#de5037, 0.5);
+
+  @media (min-width: 620px) {
+    min-width: 577px;
+    max-width: 800px;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    line-height: 1;
+    text-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3);
+  }
+
+  hr {
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: rgba(#fff, 0.5);
+    margin: 2rem 0;
+  }
+
+  p {
+    font-size: 1.8rem;
+    span {
+      font-weight: bold;
+    }
+  }
 }
