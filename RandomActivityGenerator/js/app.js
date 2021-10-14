@@ -1,15 +1,25 @@
 // fetch an activity from Bored API
 const URL = 'https://www.boredapi.com/api/activity';
 
+const card = document.querySelector('.card');
 const activityElement = document.querySelector('#activity');
 const peopleCountElement = document.querySelector('#peopleCount');
+const counterElement = document.querySelector('#counter');
 
-fetch(URL)
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-        //document.write(data.activity);
-        activityElement.innerText = data.activity;
-        peopleCountElement.innerText = data.participants;
-        //document.write(data.link);
-    });
+let count = 0;
+
+function fetchNewActivity() {
+    activityElement.innerText = 'Fetching an activity...';
+    peopleCountElement.innerText = '#';
+    fetch(URL)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            activityElement.innerText = data.activity;
+            peopleCountElement.innerText = data.participants;
+            counterElement.innerText = ++count;
+        });
+}
+
+fetchNewActivity();
+card.addEventListener('click', fetchNewActivity);
