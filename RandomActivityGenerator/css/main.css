@@ -1,5 +1,5 @@
 * {
-  margin: o;
+  margin: 0;
   padding: 0;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -8,6 +8,119 @@
 :root {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-align: center;
   font-family: "Inter", "Helvetica", "Helverica Neue", "Arial", sans-serif;
+  font-size: 62.5%;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+  font-size: 1.6rem;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f4f4f6;
+  padding: 20px;
+}
+
+.card {
+  margin: 6rem auto 12rem;
+  background: #de5037;
+  padding: 20px 40px;
+  border-radius: 5px;
+  color: white;
+  -webkit-box-shadow: 0 4rem 6rem rgba(222, 80, 55, 0.1), 0 2rem 4rem rgba(222, 80, 55, 0.3), 0 1rem 2rem rgba(222, 80, 55, 0.5);
+          box-shadow: 0 4rem 6rem rgba(222, 80, 55, 0.1), 0 2rem 4rem rgba(222, 80, 55, 0.3), 0 1rem 2rem rgba(222, 80, 55, 0.5);
+}
+
+@media (min-width: 620px) {
+  .card {
+    min-width: 577px;
+    max-width: 800px;
+  }
+}
+
+.card h1 {
+  font-size: 4.5rem;
+  line-height: 1;
+  text-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3);
+}
+
+.card hr {
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  margin: 2rem 0;
+}
+
+.card p {
+  font-size: 1.8rem;
+}
+
+.card p span {
+  font-weight: bold;
+}
+
+.detail {
+  position: absolute;
+}
+
+.detail1 {
+  bottom: 20px;
+  left: 20px;
+}
+
+.detail2 {
+  left: 20px;
+  top: 20px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.detail3 {
+  bottom: 20px;
+  right: 20px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+.detail4 {
+  top: 20px;
+  right: 20px;
+}
+
+.detail a,
+.detail span {
+  color: #de5037;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.detail a:visited,
+.detail span:visited {
+  color: #de5037;
 }
 /*# sourceMappingURL=main.css.map */

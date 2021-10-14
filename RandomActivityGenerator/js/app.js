@@ -1,6 +1,3 @@
-// https://www.boredapi.com/api/activity
-console.log('hello, world!');
-
 // fetch an activity from Bored API
 const URL = 'https://www.boredapi.com/api/activity';
 

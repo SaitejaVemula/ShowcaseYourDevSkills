@@ -1,0 +1,36 @@
+.detail {
+  position: absolute;
+
+  &1 {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  &2 {
+    left: 20px;
+    top: 20px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+
+  &3 {
+    bottom: 20px;
+    right: 20px;
+    writing-mode: vertical-lr;
+  }
+
+  &4 {
+    top: 20px;
+    right: 20px;
+  }
+
+  a,
+  span {
+    color: #de5037;
+    font-weight: bold;
+    text-decoration: none;
+    &:visited {
+      color: #de5037;
+    }
+  }
+}
