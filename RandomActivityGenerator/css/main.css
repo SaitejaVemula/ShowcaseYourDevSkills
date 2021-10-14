@@ -3,6 +3,8 @@
   padding: 0;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  -webkit-transition: all 0.3s ease-in-out 0.1s;
+  transition: all 0.3s ease-in-out 0.1s;
 }
 
 :root {
