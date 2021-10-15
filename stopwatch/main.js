@@ -1,19 +1,20 @@
 const timer = document.getElementById('stopwatch');
 
+var ppbutton = document.getElementById("playPause");
+
 var hr = 0;
 var min = 0;
 var sec = 0;
 var stoptime = true;
 
-function startTimer() {
+function playPause() {
   if (stoptime == true) {
         stoptime = false;
+        ppbutton.className = 'fa fa-pause';
         timerCycle();
-    }
-}
-function stopTimer() {
-  if (stoptime == false) {
-    stoptime = true;
+  } else {
+      ppbutton.className = 'fa fa-play';
+      stoptime = true;
   }
 }
 
